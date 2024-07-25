@@ -28,7 +28,7 @@ const Signup = () => {
             }
            
 
-            axios.post("http://localhost:3031/signUp", newInput).then(
+            axios.post("http://localhost:3001/signUp", newInput).then(
                 (response) => {
                     console.log(response.data)
                     if (response.data.status =="Success")
@@ -95,7 +95,7 @@ const Signup = () => {
                                 <button onClick={readValue} className="btn btn-success">Register</button>
                             </div>
                             <div className="col col-12 col-sm-12 col-md-12">
-                                <a href="" className="btn btn-primary">Back to login</a>
+                                <a href="/" className="btn btn-primary">Back to login</a>
                             </div>
                         </div>
 
